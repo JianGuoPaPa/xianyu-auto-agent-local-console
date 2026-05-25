@@ -228,22 +228,12 @@ python -m unittest discover -s tests -v
 python -m py_compile auto_delivery.py cookie_sync.py context_manager.py main.py monitor_panel.py XianyuAgent.py XianyuApis.py
 ```
 
-## 安全提醒
+## 安全说明
 
-不要提交这些内容：
+本仓库只保留源码、示例配置、提示词模板、脚本和测试，不包含个人运行数据。实际使用时，`.env`、Cookie、API Key、聊天数据库、运行日志、私有提示词和交付内容都应只保存在自己的本地环境中。
 
-- `.env`
-- 真实 Cookie
-- API Key
-- 闲鱼账号信息
-- 数据库 `data/*.db`
-- 日志 `logs/*`
-- 私有提示词
-- 本机路径、截图、二维码、收款码
-
-本仓库已经把这些内容写入 `.gitignore`，但你在二次开发时仍然需要自己检查。
+仓库中的 `.gitignore` 已默认排除这些运行时文件，方便二次开发时保持公开版本干净。
 
 ## License
 
 本项目沿用上游项目的 GPL-3.0 协议。详见 [LICENSE](./LICENSE)。
-
