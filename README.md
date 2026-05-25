@@ -36,6 +36,18 @@
 - Cookie 刷新辅助：可从本机 Chrome 登录态中提取候选 Cookie 并谨慎更新。
 - Windows 托管脚本：提供计划任务方式启动 Ollama、主程序和监控面板。
 
+## 运行界面
+
+以下截图使用示例数据展示本地监控面板的主要页面，实际商品、发货内容和提示词需要按自己的场景配置。
+
+<p>
+  <img src="./docs/images/screenshot-items.png" width="100%" alt="商品策略页面">
+</p>
+
+<p>
+  <img src="./docs/images/screenshot-prompts.png" width="100%" alt="全局提示词页面">
+</p>
+
 ## 参考与致谢
 
 本项目是在已有开源项目基础上整理和二次改造的参考版。感谢这些项目和作者：
@@ -60,6 +72,7 @@
 ├── monitor_panel.py                # 本地 Web 监控面板
 ├── prompts/                        # 提示词模板
 ├── scripts/windows/                # Windows 计划任务和 Cookie 辅助脚本
+├── docs/images/                    # README 展示图片
 ├── tests/                          # 单元测试
 ├── .env.example                    # 通用配置模板
 └── .env.windows.example            # Windows / Ollama 配置模板
@@ -233,6 +246,23 @@ python -m py_compile auto_delivery.py cookie_sync.py context_manager.py main.py 
 本仓库只保留源码、示例配置、提示词模板、脚本和测试，不包含个人运行数据。实际使用时，`.env`、Cookie、API Key、聊天数据库、运行日志、私有提示词和交付内容都应只保存在自己的本地环境中。
 
 仓库中的 `.gitignore` 已默认排除这些运行时文件，方便二次开发时保持公开版本干净。
+
+## 技术交流
+
+如果你对项目适配、AI 自动化、闲鱼托管、本地模型等方向感兴趣，可以扫码联系我或加入 AI 交流群。
+
+<table>
+  <tr>
+    <td align="center"><strong>联系作者</strong></td>
+    <td align="center"><strong>AI 交流群</strong></td>
+  </tr>
+  <tr>
+    <td><img src="./docs/images/wechat-contact.jpg" width="260" alt="联系作者微信二维码"></td>
+    <td><img src="./docs/images/ai-community-qr.jpg" width="260" alt="AI 交流群二维码"></td>
+  </tr>
+</table>
+
+如果群二维码过期，可以先添加个人微信联系更新。
 
 ## License
 

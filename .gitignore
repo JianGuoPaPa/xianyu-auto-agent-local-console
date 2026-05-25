@@ -23,6 +23,9 @@ data/cookie_extension_id.txt
 images/
 screenshots/
 recordings/
+!docs/
+!docs/images/
+!docs/images/*
 
 # Python
 __pycache__/
@@ -56,4 +59,3 @@ htmlcov/
 docs/superpowers/
 backups/
 downloads/
-
