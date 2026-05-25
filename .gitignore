@@ -1,0 +1,59 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+!.env.windows.example
+*_prompt.txt
+
+# Runtime data
+data/
+logs/
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.pid
+dashboard_token.txt
+chrome-cookie-extension.crx
+chrome-cookie-extension.pem
+chrome-cookie-extension-update.xml
+data/cookie_extension_id.txt
+
+# Local media or private screenshots
+images/
+screenshots/
+recordings/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# Editors and OS files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local planning/work notes
+docs/superpowers/
+backups/
+downloads/
+

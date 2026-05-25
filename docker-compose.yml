@@ -1,0 +1,14 @@
+services:
+  xianyu-auto-agent:
+    build: .
+    container_name: xianyu-auto-agent
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./prompts:/app/prompts
+    environment:
+      TZ: Asia/Shanghai
+
