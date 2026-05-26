@@ -1,0 +1,62 @@
+name: Bug report
+description: Report a reproducible problem with local setup, reply behavior, dashboard, or cookie sync.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please do not paste real Cookies, API keys, buyer data, delivery links, or private chat logs.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected to happen.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - AI reply
+        - Auto delivery
+        - Dashboard
+        - Cookie sync
+        - Windows scheduled task
+        - Ollama / model provider
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "Windows 11 / macOS 15 / Ubuntu 24.04"
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+      placeholder: "python --version"
+  - type: textarea
+    id: config
+    attributes:
+      label: Relevant configuration
+      description: Redact secrets. Include model provider, model name, dashboard host/port, and whether Cookie sync is enabled.
+      render: dotenv
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or error messages
+      description: Redact private data before posting.
+      render: text
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
